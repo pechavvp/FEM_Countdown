@@ -18,9 +18,11 @@ button.addEventListener("click", showTime);
 function showTime(event) {
     event.preventDefault();
     let arr = (selectDate.value).split("-");
+    let selectDateMs = new Date(arr[0], (arr[1])-1, arr[2]).getTime();
+    let nowMs = new Date().getTime();
     if (!selectDate.value) {
         alert("Please select date!");
-    } else if (date >= arr[2]) {
+    } else if (nowMs >= selectDateMs) {
         alert("Please select date in future!");
     } else {
         let result = intervalToDuration({

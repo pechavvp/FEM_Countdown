@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.main-block {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto 0;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.title-select {
+    display: inline;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: 700;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
